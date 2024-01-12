@@ -13,3 +13,6 @@ export const fetchDataFromApi = async (url, params) => {
     console.log(err);
   }
 };
+
+// Headers -> They are passed to that if we want the response to be in json we can set according to our own way
+// for ex -> Accept: application/json
