@@ -1,6 +1,6 @@
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-
+import PropTypes from "prop-types";
 import "./style.scss";
 
 const CircleRating = ({ rating }) => {
@@ -16,6 +16,10 @@ const CircleRating = ({ rating }) => {
       />
     </div>
   );
+};
+
+CircleRating.propTypes = {
+  rating: PropTypes.any,
 };
 
 export default CircleRating;

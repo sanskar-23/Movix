@@ -7,6 +7,7 @@ import Img from "../lazyLoadImage/Img";
 import CircleRating from "../circleRating/CircleRating";
 import Genres from "../genres/Genres";
 import PosterFallback from "../../assets/no-poster.png";
+import PropTypes from "prop-types";
 
 const MovieCard = ({ data, fromSearch, mediaType }) => {
   const { url } = useSelector((state) => state.home);
@@ -36,6 +37,12 @@ const MovieCard = ({ data, fromSearch, mediaType }) => {
       </div>
     </div>
   );
+};
+
+MovieCard.propTypes = {
+  data: PropTypes.any,
+  fromSearch: PropTypes.any,
+  mediaType: PropTypes.any,
 };
 
 export default MovieCard;

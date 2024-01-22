@@ -3,7 +3,7 @@ import useFetch from "../../../hooks/useFetch";
 import PropTypes from "prop-types";
 
 const Similar = ({ mediaType, id }) => {
-  const { data, loading, error } = useFetch(`/${mediaType}/${id}/similar`);
+  const { data, loading } = useFetch(`/${mediaType}/${id}/similar`);
 
   const title = mediaType === "tv" ? "Similar TV Shows" : "Similar Movies";
 
